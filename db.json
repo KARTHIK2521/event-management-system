@@ -1,0 +1,122 @@
+{
+  "users": [
+    {
+      "username": "Karthik M",
+      "password": "Karthik@25",
+      "email": "karthikkarthi2521@gmail.com",
+      "city": "Mysore",
+      "id": 1
+    },
+    {
+      "username": "ahfgd",
+      "password": "Karthik@3",
+      "email": "karthikkarthi2521@gmail.com",
+      "city": "Mysore",
+      "id": 3
+    },
+    {
+      "username": "Karthik M",
+      "password": "Kart@2333",
+      "email": "karthikkarthi2521@gmail.com",
+      "city": "Mysore",
+      "id": 4
+    },
+    {
+      "username": "Karthik M",
+      "password": "Madappa@23",
+      "email": "karthikkarthi2521@gmail.com",
+      "city": "Mysore",
+      "id": 5
+    }
+  ],
+  "eventsList": [
+    {
+      "eventName": "Angular Workshop Vibes",
+      "eventType": "Angular",
+      "aboutEvent": "This is a Angular Good Workshop and Its well used",
+      "eventLocation": "Banaglore KA",
+      "eventDate": "2025-02-12T18:30:00.000Z",
+      "eventTime": "12:23",
+      "eventPrice": 200,
+      "eventDuration": 2,
+      "id": 1
+    },
+    {
+      "eventName": "RXJS Workshop ",
+      "eventType": "Rxjs",
+      "aboutEvent": "This is a Angular Good Workshop and Its well used for the angular Developers and Community ",
+      "eventLocation": "Chennai  TN",
+      "eventDate": "2025-02-26T18:30:00.000Z",
+      "eventTime": "12:30",
+      "eventPrice": 1200,
+      "eventDuration": 4,
+      "id": 5
+    },
+    {
+      "eventName": "React Workshop ",
+      "eventType": "React",
+      "aboutEvent": "This is a React Good Workshop  and Its Worthyand Its Worthy",
+      "eventLocation": "Banaglore KA",
+      "eventDate": "2025-02-12T18:30:00.000Z",
+      "eventTime": "12:22",
+      "eventPrice": 120,
+      "eventDuration": 2,
+      "id": 6
+    },
+    {
+      "eventName": "Angular Fest with AWS",
+      "eventType": "AWS",
+      "aboutEvent": "This is a AWS Good Workshop and Its Worthy",
+      "eventLocation": "Banaglore KA",
+      "eventDate": "2025-02-20T18:30:00.000Z",
+      "eventTime": "11:01",
+      "eventPrice": 120,
+      "eventDuration": 12,
+      "id": 7
+    },
+    {
+      "eventName": "Angular Love",
+      "eventType": "React",
+      "aboutEvent": "Angular Love This is a React Good Workshop and Its Worthy",
+      "eventLocation": "Coimbatore TN",
+      "eventDate": "2025-02-13T18:30:00.000Z",
+      "eventTime": "22:02",
+      "eventPrice": 120,
+      "eventDuration": 6,
+      "id": 9
+    },
+    {
+      "eventName": "Vue",
+      "eventType": "Vue",
+      "aboutEvent": "This is a Vue Good Workshop and Its Worthy",
+      "eventLocation": "Delhi India",
+      "eventDate": "2025-02-13T18:30:00.000Z",
+      "eventTime": "12:02",
+      "eventPrice": 200,
+      "eventDuration": 2,
+      "id": 10
+    },
+    {
+      "eventName": "AWS Awesome ",
+      "eventType": "AWS",
+      "aboutEvent": "This is a AWS Good Workshop and Its Worthy",
+      "eventLocation": "Bangalore KA",
+      "eventDate": "2025-02-19T18:30:00.000Z",
+      "eventTime": "12:02",
+      "eventPrice": 200,
+      "eventDuration": 2,
+      "id": 11
+    },
+    {
+      "eventName": "Karthik",
+      "eventType": "React",
+      "aboutEvent": "Angular good workshop and Its worthy ",
+      "eventLocation": "Bangalore ",
+      "eventDate": "2025-02-18T18:30:00.000Z",
+      "eventTime": "11:02",
+      "eventPrice": 2000,
+      "eventDuration": 4,
+      "id": 12
+    }
+  ]
+}

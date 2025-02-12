@@ -25,3 +25,34 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Angular Material
+
+Angular Material is used to create a modern UI with pre-built components.
+It improve UI Consisstency and responsiveness.
+
+To install the Angular Material run command  `npm add @angular/material`
+
+## JSON-SERVER
+
+JSON SERVER is used as mock backend  to simulate  API responses. Its helps Perform the 
+register the User Data and Create Read Update Delete the Events 
+
+To install the json-server run command  `npm install -g json-server`
+
+Run the command to up the server  `json-server --watch db.json --port 3000`
+
+
+## Bootstrap 
+
+To install the Bootstrap run command  `npm install bootstrap`
+
+
+## Third-Party Libraries Used 
+
+## Angular Material `Its UI Components`
+
+## rxjs `Reactive State Management`
+
+## JSON SERVER  `Mock API Backend`

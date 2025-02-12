@@ -1,0 +1,32 @@
+
+<div class="background-banner">
+  <div class="banner">
+    <div class="error__container">
+
+      <div class="error__code">
+        <p>4</p>
+        <p>0</p>
+        <p>4</p>
+      </div>
+      <div class="error__title font_weight_normal">Page not <span class="font_weight_bold"> found</span> </div>
+      <div class="error__description">
+        Oops! We can't seem to find that page. It might have been removed or doesn't exits anymore
+      </div>
+
+        <div *ngIf="isUserislogin; else isUsernotlogin">
+          <button class="action" routerLink="/dashboard">
+            Go Home
+          </button>
+        </div>
+        <div>
+          <ng-template #isUsernotlogin>
+            <button class="action" routerLink="">
+              Go Home
+            </button>
+          </ng-template>
+        </div>
+
+    </div>
+
+  </div>
+</div>

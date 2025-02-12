@@ -1,0 +1,131 @@
+.background-banner {
+  background-color:  #131413 ;
+}
+
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: Montserrat, sans-serif;
+  color: #fcfffd;
+  overflow-y: scroll;
+}
+
+.error__container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px;
+}
+
+.error__code {
+  max-width: 800px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: 800;
+  gap: 10px;
+}
+
+p:first-of-type{
+  animation: fall 1s linear;
+  transform: rotateZ(-20deg);
+}
+p:last-of-type{
+  animation: fall 1.8s linear;
+  transform: rotateZ(8deg);
+}
+p:nth-of-type(2){
+  color: #1674d9;
+  animation: bounce 1.2s 1.8s linear forwards;
+  opacity: 0;
+}
+.error__title{
+  font-size: 2rem;
+  padding: 0 3%;
+  color: #1674d9;
+}
+
+.font_weight_normal {
+  font-weight: 400 !important;
+}
+
+.font_weight_bold {
+  font-weight: 700 !important;
+}
+.error__description{
+  font-size: 1rem;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  text-align: center;
+  line-height: 1.6;
+  padding: 0 10%;
+  color: #77838f;
+}
+.action{
+  font: inherit;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #1674d9 ;
+  color: #fcfffd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 1s ease-out;
+}
+.action:hover{
+  opacity: 0.8;
+  transform: translateY(-0.55rem);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.action a{
+  cursor: pointer;
+}
+
+@media screen and(min-width:48rem) {
+  .error__description{
+    padding: 0;
+  }
+}
+
+@keyframes fall{
+  0%{
+    transform: translateY(-100vh);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce{
+  0%,
+  40%,
+  75%,
+  95% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  15%{
+    transform: translateY(-25px);
+  }
+
+  65%{
+    transform: translateY(-15px);
+  }
+
+  85%{
+    transform: translateY(-5px);
+  }
+
+  100%{
+    transform: rotateZ(45deg);
+    opacity: 1;
+  }
+}

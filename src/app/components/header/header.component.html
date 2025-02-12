@@ -1,0 +1,24 @@
+<!-- header  Section-->
+<mat-toolbar>
+  <div class="first">
+    <span class="logo">
+      <a class="second" routerLink="/dashboard">
+        <svg width="290" height="100.9" viewBox="0 0 290 101 " class="roboto"  xmlns="http://www.w3.org/2000/svg">
+          <text x="20" y="55" font-size="18" text-anchor="start" fill="rgb(51, 51, 51)">book</text>
+          <circle cx="85" cy="50" r="20" fill="#D71920" />
+          <text x="85" y="55" font-size="24" text-anchor="middle" fill="white">my</text>
+          <text x="110" y="55" font-size="18"  fill="rgb(51, 51, 51)">Event</text>
+        </svg>
+      </a>
+    </span>
+  </div>
+  <span routerLink="/dashboard" class="dashboard_link">Event Management</span>
+
+  <div class="nav-links">
+    <a mat-button routerLink="/vieweventlist">Event List</a>
+    <button mat-button  (click)="openAddEventComponent()">Add Event</button>
+    <a mat-button routerLink="editAndDeleteEvent">Update & Delete Event</a>
+  </div>
+
+  <button mat-raised-button  color="warn" class="logout-btn" (click)="onLogOff()">Logout</button>
+</mat-toolbar>

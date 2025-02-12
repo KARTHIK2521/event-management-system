@@ -1,0 +1,123 @@
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.dialog-section {
+  width: 100%;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.dialog-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.event-name {
+  line-height: 28px;
+  color: #222222;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.event-description {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.event-date-location {
+  margin: 2px;
+  padding: 4px;
+  color: #222222;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.location-icon{
+  color: #ece95e;
+  font-size: 24px;
+  margin-right: 8px;
+  height: 23px;
+  width: 23px;
+}
+
+
+.actions-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .dialog-container {
+    padding: 12px;
+  }
+  .event-name {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .event-description {
+    font-size: 0.6rem;
+  }
+
+  .event-date-location{
+    font-size: 0.8rem;
+  }
+  .actions-section{
+    font-size: 6px;
+    gap: 6px;
+  }
+  .mat-cls{
+    font-size: 10px;
+    padding: 8px;
+  }
+
+}
+@media (max-width: 400px) {
+  .dialog-container {
+    padding: 8px;
+  }
+  .event-name {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .event-description {
+    font-size: 0.5rem;
+  }
+
+  .event-date-location{
+    font-size: 0.5rem;
+  }
+  .mat-cls{
+    font-size: 10px;
+    padding: 8px;
+  }
+}
+

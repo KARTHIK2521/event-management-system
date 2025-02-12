@@ -1,0 +1,59 @@
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <mat-card class="p-2 shadow-md">
+    <mat-card-header class="text-center mb-2">
+      <h2>User Registration </h2>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form class="example-form" [formGroup]="registerForm" (ngSubmit)="proceedRegister()">
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="username">
+          <mat-error *ngIf="registerForm.controls['username'].errors?.['minlength'] || registerForm.controls['username'].errors?.['maxlength']" >
+            <span>Username atleast 5 letter and maximum 16 letters </span>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width mb-1" >
+          <mat-label>Password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+          <mat-error *ngIf="registerForm.controls.password?.hasError('pattern')">
+              <span>Password must be 8 chars with 1 uppercase, 1 lowercase, & 1 special char</span>
+          </mat-error>
+          <mat-error *ngIf="registerForm.controls['password'].errors?.['maxlength']" >
+            <span> Password allow Maximum 10 Charcters Only </span>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width" >
+          <mat-label>Email</mat-label>
+          <input  type="email" matInput formControlName="email">
+        </mat-form-field>
+        <mat-form-field class="example-full-width" >
+          <mat-label>City</mat-label>
+          <input matInput formControlName="city">
+        </mat-form-field>
+        <div>
+          <button class="m-1" type="submit"  mat-raised-button color="primary">Submit</button>
+          <a class="m-1" routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+        </div>
+
+      </form>
+    </mat-card-content>
+
+  </mat-card>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

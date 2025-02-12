@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap);
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.dashboard_link {
+  cursor: pointer;
+  text-decoration: none;
+}
+.first {
+  width: 250px;
+  min-width: 290px;
+  vertical-align: middle;
+}
+
+.roboto {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  padding-left: 2rem;
+}
+
+.logout-btn {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  mat-toolbar {
+    flex-direction: column;
+    text-align: center;
+    min-height: 18rem;
+    max-width: 100%;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2rem;
+  }
+
+  .logout-btn {
+    /* margin-top: 10px; */
+    /* width: 100%; */
+    visibility: hidden;
+  }
+
+  svg {
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+ mat-toolbar{
+  padding: 5px;
+  min-height: 26rem;
+ }
+ .first{
+  width: 124px;
+  min-width: 190px;
+  vertical-align: middle;
+ }
+ .nav-links{
+  font-size: 14px;
+  padding: 3px;
+  gap: 6px;
+ }
+ .logout-btn{
+  font-size: 14px;
+ }
+ .dashboard_link{
+  font-size: 14px;
+ }
+ .svg {
+  padding-left: 1rem;
+}
+.logout-btn {
+  margin: 0px;
+  font-size: 12px;
+  padding: 12px;
+  width: 30%;
+  visibility:visible;
+}
+
+}

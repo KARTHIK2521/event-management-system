@@ -1,0 +1,13 @@
+.main-body{
+  padding: 20px;
+  padding-bottom: 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+mat-form-field {
+  width: 30% !important;
+}
+sub{
+  padding-right: 4px;
+}
+

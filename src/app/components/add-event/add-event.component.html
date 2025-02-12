@@ -1,0 +1,62 @@
+<h1 mat-dialog-title>
+  Event Details
+</h1>
+<form [formGroup]="eventAddForm" (ngSubmit)="onAddOrUpdateEvent()">
+<div mat-dialog-content class="content">
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Event Name</mat-label>
+      <input matInput type="text" formControlName="eventName">
+      <mat-error *ngIf="eventAddForm.controls['eventName'].errors?.['minlength'] || eventAddForm.controls['eventName'].errors?.['maxlength']" >
+        <span>EventName atleast 5 letter and maximum 25 letters </span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Event Type</mat-label>
+      <mat-select formControlName="eventType">
+        <mat-option  *ngFor="let val of eventTypesList" [value]="val">
+         {{val}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>About Event</mat-label>
+      <textarea matInput type="text" formControlName="aboutEvent" ></textarea>
+      <mat-error *ngIf="eventAddForm.controls['aboutEvent'].errors?.['minlength'] || eventAddForm.controls['aboutEvent'].errors?.['maxlength']" >
+        <span>About the Event atleast 5 character and maximum 60 character </span>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Location</mat-label>
+      <input matInput type="text" formControlName="eventLocation">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Event date</mat-label>
+      <input matInput [matDatepicker]="picker" [min]="minDate"  formControlName="eventDate">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="pt-3">
+      <mat-label>Time</mat-label>
+      <input matInput type="time" formControlName="eventTime">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Price</mat-label>
+      <input matInput type="number" min="0" formControlName="eventPrice">
+      <mat-hint>In rupees</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="pt-2">
+      <mat-label>Event Time Duration</mat-label>
+      <input matInput type="number" min="0" max="24" formControlName="eventDuration">
+      <mat-hint>In hours</mat-hint>
+    </mat-form-field>
+
+  </div>
+</div>
+
+<mat-dialog-actions class="actions">
+  <button mat-raised-button (click)="closeEventModal()">Cancel</button>
+  <button type="submit" mat-raised-button color="primary" > {{ data ? 'Update' : 'Save' }} </button>
+</mat-dialog-actions>
+</form>

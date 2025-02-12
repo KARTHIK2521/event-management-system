@@ -1,0 +1,51 @@
+.main-body{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+table{
+  width: 100%;
+  min-width: 900px;
+}
+
+mat-form-field {
+  width: 30% !important;
+}
+sub{
+padding-right: 4px;
+}
+
+.event-desc{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .main-body{
+    padding-top: 2rem;
+  }
+  .event-desc{
+    max-width: 100px;
+  }
+  button{
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+}
+
+@media screen and (max-width: 480px){
+  table{
+    min-width: 600px;
+  }
+  .event-desc{
+     content: none;
+  }
+
+}
+
